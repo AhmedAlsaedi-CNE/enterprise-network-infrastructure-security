@@ -76,6 +76,11 @@ The main objective was to test and simulate common network attacks (like Rogue D
 #### B. Ping & Trace from PC1 at VLAN 10 LAN1 to PC4 at VLAN 20 LAN2:
 <img width="1292" height="685" alt="image" src="https://github.com/user-attachments/assets/c868e655-cba1-422f-aa3b-e0da0c200a69" />
 
+#### C. PAT / NAT Overload Translation Verification
+#### Verifying that internal host IP addresses (VLAN 10 & VLAN 20) are successfully dynamically translated to the Public WAN interface IP when accessing external resources:
+<img width="1175" height="641" alt="image" src="https://github.com/user-attachments/assets/c055fba0-27f2-4148-85ec-61e8a142ac53" />
+
+
 ### 2.Layer 2 Access Security (DHCP Snooping, Port Security)
 #### A. Active DHCP Snooping Binding Table 
 #### Verifying legitimate clients assigned via DHCP on trusted switchports:
