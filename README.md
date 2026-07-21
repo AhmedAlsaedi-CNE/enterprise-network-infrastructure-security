@@ -12,7 +12,8 @@ The main objective was to test and simulate common network attacks (like Rogue D
 
 ## Network Topology
 
-<img width="925" height="625" alt="Screenshot 2026-07-21 083211" src="https://github.com/user-attachments/assets/259255f7-4295-4dd1-92fa-c93fcbee4bb5" />
+<img width="907" height="620" alt="Screenshot 2026-07-21 105841" src="https://github.com/user-attachments/assets/7b010bd0-1251-44bd-8c87-1259e7b7ce58" />
+
 
 
 ---
