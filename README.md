@@ -76,13 +76,13 @@ The main objective was to test and simulate common network attacks (like Rogue D
 #### B. Ping & Trace from PC1 at VLAN 10 LAN1 to PC4 at VLAN 20 LAN2:
 <img width="1292" height="685" alt="image" src="https://github.com/user-attachments/assets/c868e655-cba1-422f-aa3b-e0da0c200a69" />
 
-### 2.Layer 2 Access Security (DHCP Snooping, Port Security & DAI)
+### 2.Layer 2 Access Security (DHCP Snooping, Port Security)
 #### A. Active DHCP Snooping Binding Table 
 #### Verifying legitimate clients assigned via DHCP on trusted switchports:
 <img width="1472" height="318" alt="image" src="https://github.com/user-attachments/assets/034eaecf-25c5-4f91-8414-ded2347345d5" />
 
 #### B. Port Security Enforcement (Attacker3 Mitigation)
-#### Verifying frame drops when an unauthorized device/MAC tries to flood or access Gi8 on Switch-1:
+#### Verifying frame drops when an unauthorized device/MAC tries to flood or access Gi2/0 (Gi8) on Switch-1:
 <img width="1441" height="551" alt="image" src="https://github.com/user-attachments/assets/74632657-2c01-4a94-a032-a42787ccc041" />
 
 ### 3. Dynamic Routing Security (EIGRP MD5 Authentication)
