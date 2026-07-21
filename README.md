@@ -67,10 +67,36 @@ The main objective was to test and simulate common network attacks (like Rogue D
 
 ---
 
-## Remote Access Credentials (Lab Environment)
+##  Real-World Attack Simulation & CLI Verification (PoC)
 
-```text
-Domain Name: AhmedAlsaed.lab
-Username:    Ahmed
-Password:    cisco
-Enable Sec:  class
+### 1. End-to-End Connectivity & NAT Verification
+#### A. Ping & Trace from PC6 to Server1 (8.8.8.8):
+<img width="1265" height="627" alt="image" src="https://github.com/user-attachments/assets/bbbe5467-dba8-430e-a095-d4fbc863fd30" />
+
+#### B. Ping & Trace from PC1 at VLAN 10 LAN1 to PC4 at VLAN 20 LAN2:
+<img width="1292" height="685" alt="image" src="https://github.com/user-attachments/assets/c868e655-cba1-422f-aa3b-e0da0c200a69" />
+
+### 2.Layer 2 Access Security (DHCP Snooping, Port Security & DAI)
+#### A. Active DHCP Snooping Binding Table 
+#### Verifying legitimate clients assigned via DHCP on trusted switchports:
+<img width="1472" height="318" alt="image" src="https://github.com/user-attachments/assets/034eaecf-25c5-4f91-8414-ded2347345d5" />
+
+#### B. Port Security Enforcement (Attacker3 Mitigation)
+#### Verifying frame drops when an unauthorized device/MAC tries to flood or access Gi8 on Switch-1:
+<img width="1441" height="551" alt="image" src="https://github.com/user-attachments/assets/74632657-2c01-4a94-a032-a42787ccc041" />
+
+### 3. Dynamic Routing Security (EIGRP MD5 Authentication)
+#### Verifying MD5 authenticated EIGRP neighbor adjacencies across Distribution switches and Core routers:
+<img width="832" height="611" alt="image" src="https://github.com/user-attachments/assets/4b258678-10e7-4c81-8213-b2da7b9767be" />
+
+### 4. Perimeter ACL & External Threat Drops
+#### Verifying blocked probe attempts from external WAN nodes (Attacker1 & Attacker2) at router R1:
+<img width="1113" height="357" alt="image" src="https://github.com/user-attachments/assets/4853fbdd-930d-4ad3-83e6-58ab12357a06" />
+
+
+
+
+
+
+
+
