@@ -54,7 +54,7 @@ The main objective was to test and simulate common network attacks (like Rogue D
 ### 1. Access Layer Security Tests
 | Test Scenario | Security Mechanism | Observed Behavior / Result |
 | :--- | :--- | :--- |
-| **Rogue Host Connection** | Port Security (`protect`) | Unauthorized frames dropped; legitimate traffic unaffected. |
+| **Rogue Host Connection** | Port Security (`restrict`) | Unauthorized frames dropped; legitimate traffic unaffected. |
 | **ARP Spoofing / MitM** | Dynamic ARP Inspection | Invalid ARP replies dropped via binding table mismatch. |
 | **Rogue DHCP Server** | DHCP Snooping | DHCP Offer packets blocked on untrusted access ports. |
 
